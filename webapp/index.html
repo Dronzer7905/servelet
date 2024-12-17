@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>layout</title>
+    <!-- Link to the external CSS stylesheet -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- Navigation bar -->
 <nav class="navs">
     <ul class="nav">
         <li class="n">Home</li>
@@ -14,18 +16,39 @@
         <li class="n">Contact</li>
     </ul>
 </nav>
+<!-- Section with two boxes -->
 <section class="sec">
     <div class="box"></div>
     <div class="box"></div>
 </section>
+<!-- Logo image -->
 <div>
     <img class="logo" src="https://th.bing.com/th?id=OIP.s6RuZ2Cv4DtF-HuEFALqKwHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="image">
 </div>
+<!-- Content section with a welcome message -->
 <div class="content">
     <h2>
         <a href="http://localhost:8080/mycat/test">Welcome to the project</a>
     </h2>
 </div>
+<!-- Contact form -->
+<div class="form-container">
+    <h3>Contact Us</h3>
+    <form action="http://localhost:8080/mycat/test" method="post">
+        <!-- Input for name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <!-- Input for email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <!-- Textarea for message -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+    </form>
+</div>
+<!-- Footer section -->
 <footer>
     <div class="foot">
         <h3>Copyright 2024</h3>
